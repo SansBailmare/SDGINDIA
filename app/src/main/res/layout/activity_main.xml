@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sanket.sdg_india.MainActivity">
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUSTAINABLE"
+        android:textColor="@color/susblue"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_marginTop="70sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DEVELOPMENT"
+            android:textSize="45sp"
+            android:textColor="@color/susblue"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G"
+            android:layout_marginRight="4dp"
+            android:textColor="@color/goblue"
+            android:textSize="80sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="84dp"
+            android:layout_height="114dp"
+            android:layout_marginBottom="500dp"
+            android:src="@drawable/sdgring" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALS"
+            android:textColor="@color/goblue"
+            android:textSize="80sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+    <LinearLayout
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IN"
+            android:textColor="#ffa500"
+            android:textStyle="bold"
+            android:textSize="85sp"
+            android:layout_marginLeft="80dp"
+            />
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:textColor="@color/goblue"
+        android:textStyle="bold"
+        android:textSize="85sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IA"
+            android:textColor="#228b22"
+            android:textStyle="bold"
+            android:textSize="85sp" />
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
