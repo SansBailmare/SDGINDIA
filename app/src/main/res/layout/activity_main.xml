@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,10 +47,12 @@
 
         <ImageView
             android:id="@+id/iv"
-            android:layout_width="84dp"
-            android:layout_height="114dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="10dp"
             android:layout_marginBottom="500dp"
-            android:src="@drawable/sdgring" />
+            android:src="@drawable/sdgwheel" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -60,43 +62,47 @@
             android:textSize="80sp"
             android:textStyle="bold" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/l2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="10dp">
-    <LinearLayout
-        android:id="@+id/res"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="15dp">
-        <TextView
-            android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/res"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="IN"
-            android:textColor="#ffa500"
-            android:textStyle="bold"
-            android:textSize="85sp"
-            android:layout_marginLeft="80dp"
-            />
-         <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="D"
-        android:textColor="@color/goblue"
-        android:textStyle="bold"
-        android:textSize="85sp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="IA"
-            android:textColor="#228b22"
-            android:textStyle="bold"
-            android:textSize="85sp" />
-    </LinearLayout>
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="IN"
+                android:textColor="#ffa500"
+                android:textSize="85sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D"
+                android:textColor="@color/goblue"
+                android:textSize="85sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IA"
+                android:textColor="#228b22"
+                android:textSize="85sp"
+                android:textStyle="bold" />
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

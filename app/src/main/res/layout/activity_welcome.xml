@@ -1,16 +1,322 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context="com.example.sanket.sdg_india.WelcomeActivity">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="andar agaya"
+    tools:context="com.example.sanket.sdg_india.WelcomeActivity"
+    android:background="#fcfcfc">
 
-        />
-</LinearLayout>
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/colappsingtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:title="SDG-INDIA"
+            android:background="@drawable/mat"
+            >
+            <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarid"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_collapseMode="pin"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.demotxt.droidsrce.homedashboard.Home"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#fcfcfc"
+            android:gravity="center"
+            android:id="@+id/ll">
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/bankcardId"
+                    android:layout_width="160dp"
+                    android:layout_height="225dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/sdgwheel"
+                            android:padding="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="What are Sustainable Development Goals (SDGs)?
+"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Read More"
+                            android:padding="5dp"
+                            android:textColor="@android:color/darker_gray"/>
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:paddingTop="2dp"
+                                android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="160dp"
+                    android:layout_height="225dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/country"
+                            android:padding="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+
+                            android:text="How is my country progressing on the SDGs?"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Read More"
+                                android:padding="5dp"
+                                android:textColor="@android:color/darker_gray"/>
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:paddingTop="2dp"
+                                android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="160dp"
+                    android:layout_height="225dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/volunteer"
+                            android:padding="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="How can I volunteer for the SDGs?
+"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Read More"
+                                android:padding="5dp"
+                                android:textColor="@android:color/darker_gray"/>
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="2dp"
+                                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="160dp"
+                    android:layout_height="225dp"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/youth"
+                            android:padding="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="How can youth contribute to SDGs?"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Read More"
+                                android:padding="5dp"
+                                android:textColor="@android:color/darker_gray"/>
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:paddingTop="2dp"
+                                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="340dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+
+                            android:padding="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="Visit site"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Link dete hai"
+                            android:padding="5dp"
+                            android:textColor="@android:color/darker_gray"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
