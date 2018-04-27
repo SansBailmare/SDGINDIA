@@ -23,6 +23,15 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".SustainableActivity"
+            android:theme="@style/AppTheme.SlidrActivitytheme"/>
+        <activity android:name=".CountryActivity"
+            android:theme="@style/AppTheme.SlidrActivitytheme"/>
+        <activity android:name=".VolunteerActivity"
+            android:theme="@style/AppTheme.SlidrActivitytheme"/>
+        <activity android:name=".YouthActivity"
+            android:theme="@style/AppTheme.SlidrActivitytheme"/>
+
     </application>
 
 </manifest>
