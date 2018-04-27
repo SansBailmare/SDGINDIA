@@ -12,6 +12,7 @@ import android.util.Pair;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ViewFlipper;
 
 public class WelcomeActivity extends AppCompatActivity {
 
@@ -19,10 +20,17 @@ public class WelcomeActivity extends AppCompatActivity {
     private ImageView s,c,v,y;
     private TextView su,co,vo,yo;
 
+    ViewFlipper viewFlipper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+
+        viewFlipper=(ViewFlipper)findViewById(R.id.viewflip);
+        viewFlipper.startFlipping();
+        viewFlipper.setFlipInterval(2000);
+        viewFlipper.setAutoStart(true);
 
         sus=(CardView) findViewById(R.id.suscardId);
         s=(ImageView) findViewById(R.id.susimage);

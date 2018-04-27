@@ -12,8 +12,8 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_height="350dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         >
 
         <android.support.design.widget.CollapsingToolbarLayout
@@ -22,11 +22,105 @@
             android:layout_height="match_parent"
             app:layout_scrollFlags="exitUntilCollapsed|scroll"
             app:contentScrim="?attr/colorPrimary"
-            app:expandedTitleMarginEnd="64dp"
-            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="2dp"
+            app:expandedTitleMarginStart="35dp"
             app:title="SDG-INDIA"
-            android:background="@drawable/mat"
             >
+            <ViewFlipper
+                android:id="@+id/viewflip"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:textStyle="italic"
+                        android:text="Although we all share the same planet, not everyone can change the world in the same way and few individuals can change it by themselves"/>
+                    <ImageView
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/jetli"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:textStyle="italic"
+                        android:text="If you haven’t heard of the Global Goals yet, you will soon….why should you care? Because the last time the world did something like this, it saved millions of lives."/>
+                    <ImageView
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/billgates"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:textStyle="italic"
+                        android:text="Promise us that you will keep your commitments and invest in our future. Promise that every child will have the right to safe, free and quality primary and secondary education."/>
+                    <ImageView
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/malalayousafzai"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:textStyle="italic"
+                        android:text="We are running out of time and it now incumbent upon all of us, all of you, activists, young and old, to please get involved. Because the environment and the fight for the world’s poor are inherently linked. The planet can no longer wait, the underprivileged can no longer be ignored."/>
+                    <ImageView
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/leonardodicaprio"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:layout_gravity="center"
+                        android:textSize="10dp"
+                        android:textStyle="italic"
+                        android:text="Our collective commitment to the 17 Global Goals is our most important defense in ensuring that the benefits of our modernizing world are shared among all nations and people and not just by the privileged few."/>
+                        <ImageView
+                            android:layout_marginLeft="30dp"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/forestwhitaker"/>
+                </LinearLayout>
+
+
+
+            </ViewFlipper>
             <android.support.v7.widget.Toolbar
             android:id="@+id/toolbarid"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
