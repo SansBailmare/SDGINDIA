@@ -1,32 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_material_light"
-    tools:context="com.example.sanket.sdg_india.SustainableActivity">
+    tools:context="com.example.sanket.sdg_india.SustainableActivity"
+    android:background="@color/graylight"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@drawable/gradientbackground"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/sdgwheel"/>
+        </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:id="@+id/headingsus"
+            android:layout_width="match_parent"
+            android:layout_marginRight="60dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="What are Sustainable Development Goals (SDGs)?"
+                android:textSize="25dp"/>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_below="@id/headingsus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:text="The idea for the SDGs was born at the 2012 Rio+20 Summit in Brazil. At the summit, government leaders began creating a set of universal goals to tackle poverty, ill health, inequality and environmental degradation. The idea was to use the SDGs as a new agreement to replace the eight Millennium Development Goals (MDGs), which expired in 2015."
+                android:textSize="25dp"/>
 
-    <ImageView
-        android:id="@+id/susimage"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:transitionName="susimage"
-        android:layout_marginTop="24dp"
-        app:srcCompat="@drawable/sdgwheel" />
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
 
-    <TextView
-        android:id="@+id/sustext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/susimage"
-        android:layout_marginTop="52dp"
-        android:gravity="center"
-        android:transitionName="sustext"
-        android:text="What are Sustainable Development Goals (SDGs)?"
-        android:textSize="25dp" />
-</RelativeLayout>
+
+</LinearLayout>

@@ -2,6 +2,7 @@ package com.example.sanket.sdg_india;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
@@ -17,8 +18,12 @@ import android.widget.ViewFlipper;
 public class WelcomeActivity extends AppCompatActivity {
 
     private CardView sus,country,vol,youth,leader;
-    private ImageView s,c,v,y;
-    private TextView su,co,vo,yo;
+    private ImageView s,c,v,y,fb,tw,insta;
+    private TextView su,co,vo,yo,sl1,sl2;
+
+    Typeface tf1,tf2;
+
+
 
     ViewFlipper viewFlipper;
 
@@ -27,9 +32,50 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
+        fb=(ImageView)findViewById(R.id.fb);
+        tw=(ImageView)findViewById(R.id.tw);
+        insta=(ImageView)findViewById(R.id.insta);
+
+
+
+        sl1=(TextView)findViewById(R.id.slt1);
+        tf1=Typeface.createFromAsset(getAssets(),"AmaticBold.ttf");
+        sl1.setTypeface(tf1);
+        sl2=(TextView)findViewById(R.id.slit1);
+        tf2=Typeface.createFromAsset(getAssets(),"GreatVibesRegular.otf");
+        sl2.setTypeface(tf2);
+
+        sl1=(TextView)findViewById(R.id.slt2);
+        tf1=Typeface.createFromAsset(getAssets(),"AmaticBold.ttf");
+        sl1.setTypeface(tf1);
+        sl2=(TextView)findViewById(R.id.slit2);
+        tf2=Typeface.createFromAsset(getAssets(),"GreatVibesRegular.otf");
+        sl2.setTypeface(tf2);
+
+        sl1=(TextView)findViewById(R.id.slt3);
+        tf1=Typeface.createFromAsset(getAssets(),"AmaticBold.ttf");
+        sl1.setTypeface(tf1);
+        sl2=(TextView)findViewById(R.id.slit3);
+        tf2=Typeface.createFromAsset(getAssets(),"GreatVibesRegular.otf");
+        sl2.setTypeface(tf2);
+
+        sl1=(TextView)findViewById(R.id.slt4);
+        tf1=Typeface.createFromAsset(getAssets(),"AmaticBold.ttf");
+        sl1.setTypeface(tf1);
+        sl2=(TextView)findViewById(R.id.slit4);
+        tf2=Typeface.createFromAsset(getAssets(),"GreatVibesRegular.otf");
+        sl2.setTypeface(tf2);
+
+        sl1=(TextView)findViewById(R.id.slt5);
+        tf1=Typeface.createFromAsset(getAssets(),"AmaticBold.ttf");
+        sl1.setTypeface(tf1);
+        sl2=(TextView)findViewById(R.id.slit5);
+        tf2=Typeface.createFromAsset(getAssets(),"GreatVibesRegular.otf");
+        sl2.setTypeface(tf2);
+
         viewFlipper=(ViewFlipper)findViewById(R.id.viewflip);
         viewFlipper.startFlipping();
-        viewFlipper.setFlipInterval(2000);
+        viewFlipper.setFlipInterval(3000);
         viewFlipper.setAutoStart(true);
 
         sus=(CardView) findViewById(R.id.suscardId);
@@ -49,6 +95,8 @@ public class WelcomeActivity extends AppCompatActivity {
         yo=(TextView) findViewById(R.id.youthtext);
 
         leader=(CardView) findViewById(R.id.leadercardid);
+
+
 
         sus.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -117,6 +165,33 @@ public class WelcomeActivity extends AppCompatActivity {
                 startActivity(browserintent);
             }
         });
+        fb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browserintent=new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/theleadership30/"));
+                startActivity(browserintent);
+
+            }
+        });
+        tw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browserintent=new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/theleadership30"));
+                startActivity(browserintent);
+
+            }
+        });
+        insta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browserintent=new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/theleadership30/"));
+                startActivity(browserintent);
+
+            }
+        });
+
 
     }
+
+
 }

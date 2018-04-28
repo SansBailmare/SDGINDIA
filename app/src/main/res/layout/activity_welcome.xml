@@ -7,12 +7,13 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context="com.example.sanket.sdg_india.WelcomeActivity"
-    android:background="#fcfcfc">
+    android:background="@drawable/glass">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_height="350dp"
+        android:background="@drawable/water"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         >
 
@@ -32,50 +33,118 @@
                 android:layout_height="fill_parent">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="280dp"
+                    android:orientation="horizontal"
                     android:gravity="center">
-                    <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="wrap_content"
-                        android:textColor="#000"
-                        android:textSize="12dp"
-                        android:textStyle="italic"
-                        android:text="Although we all share the same planet, not everyone can change the world in the same way and few individuals can change it by themselves"/>
-                    <ImageView
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/slt5"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:layout_gravity="center"
+                            android:textSize="15dp"
+                            android:textStyle="italic"
+                            android:text="Our collective commitment to the 17 Global Goals is our most important defense in ensuring that the benefits of our modernizing world are shared among all nations and people and not just by the privileged few."/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="40dp"/>
+                        <TextView
+                            android:id="@+id/slit5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:textSize="20dp"
+                            android:text="-Forest Whitaker"/>
+
+                    </LinearLayout>
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_marginLeft="30dp"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/jetli"/>
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/forestwhitaker"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/slt4"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:layout_marginTop="40dp"
+                            android:textStyle="italic"
+                            android:text="We are running out of time and it now incumbent upon all of us, all of you, activists, young and old, to please get involved. Because the environment and the fight for the world’s poor are inherently linked. The planet can no longer wait, the underprivileged can no longer be ignored."/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="40dp"/>
+                        <TextView
+                            android:id="@+id/slit4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:textSize="20dp"
+                            android:text="-Leonardo DiCaprio"/>
+
+                    </LinearLayout>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/leonardodicaprio"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     android:gravity="center">
-                    <TextView
-                        android:layout_width="180dp"
+                    <LinearLayout
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#000"
-                        android:textSize="12dp"
-                        android:textStyle="italic"
-                        android:text="If you haven’t heard of the Global Goals yet, you will soon….why should you care? Because the last time the world did something like this, it saved millions of lives."/>
-                    <ImageView
-                        android:layout_marginLeft="30dp"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:src="@drawable/billgates"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="180dp"
-                        android:layout_height="wrap_content"
-                        android:textColor="#000"
-                        android:textSize="12dp"
-                        android:textStyle="italic"
-                        android:text="Promise us that you will keep your commitments and invest in our future. Promise that every child will have the right to safe, free and quality primary and secondary education."/>
-                    <ImageView
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/slt3"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:layout_marginTop="40dp"
+                            android:textStyle="italic"
+                            android:text="Promise us that you will keep your commitments and invest in our future. Promise that every child will have the right to safe, free and quality primary and secondary education."/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000"
+                            android:layout_marginTop="10dp"
+                            />
+                        <TextView
+                            android:id="@+id/slit3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:textSize="20dp"
+                            android:text="-Malala Yousafzai"/>
+
+                    </LinearLayout>
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_marginLeft="30dp"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
@@ -85,38 +154,84 @@
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     android:gravity="center">
-                    <TextView
-                        android:layout_width="180dp"
+                    <LinearLayout
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#000"
-                        android:textSize="12dp"
-                        android:textStyle="italic"
-                        android:text="We are running out of time and it now incumbent upon all of us, all of you, activists, young and old, to please get involved. Because the environment and the fight for the world’s poor are inherently linked. The planet can no longer wait, the underprivileged can no longer be ignored."/>
-                    <ImageView
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/slt2"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:layout_marginTop="35dp"
+                            android:textSize="17dp"
+                            android:textStyle="italic"
+                            android:text="If you haven’t heard of the Global Goals yet, you will soon….why should you care? Because the last time the world did something like this, it saved millions of lives."/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="40dp"/>
+                        <TextView
+                            android:id="@+id/slit2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:textSize="20dp"
+                            android:text="-Bill Gates"/>
+
+                    </LinearLayout>
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_marginLeft="30dp"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/leonardodicaprio"/>
+                        android:src="@drawable/billgates"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     android:orientation="horizontal"
                     android:gravity="center">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
                     <TextView
+                        android:id="@+id/slt1"
                         android:layout_width="180dp"
                         android:layout_height="wrap_content"
                         android:textColor="#000"
-                        android:layout_gravity="center"
-                        android:textSize="10dp"
+                        android:layout_marginTop="40dp"
+                        android:textSize="18dp"
                         android:textStyle="italic"
-                        android:text="Our collective commitment to the 17 Global Goals is our most important defense in ensuring that the benefits of our modernizing world are shared among all nations and people and not just by the privileged few."/>
-                        <ImageView
-                            android:layout_marginLeft="30dp"
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:src="@drawable/forestwhitaker"/>
+                        android:text="Although we all share the same planet, not everyone can change the world in the same way and few individuals can change it by themselves"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="40dp"/>
+                        <TextView
+                            android:id="@+id/slit1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                            android:textSize="20dp"
+                        android:text="-JetLi"/>
+
+                    </LinearLayout>
+                        <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/jetli"/>
                 </LinearLayout>
+
+
+
+
 
 
 
@@ -134,6 +249,7 @@
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/glass"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
         <LinearLayout
             android:layout_width="match_parent"
@@ -156,6 +272,7 @@
                     android:id="@+id/suscardId"
                     android:layout_width="160dp"
                     android:layout_height="225dp"
+
                     android:layout_margin="10dp">
                     <LinearLayout
                         android:id="@+id/sustainableL"
@@ -196,7 +313,7 @@
                             android:gravity="center"
                             android:text="Read More"
                             android:padding="5dp"
-                            android:textColor="@android:color/darker_gray"/>
+                            />
 
                             <ImageView
                                 android:layout_width="20dp"
@@ -212,6 +329,7 @@
                     android:clickable="true"
                     android:layout_width="160dp"
                     android:layout_height="225dp"
+
                     android:layout_margin="10dp">
                     <LinearLayout
                         android:id="@+id/CountryL"
@@ -252,7 +370,7 @@
                                 android:gravity="center"
                                 android:text="Read More"
                                 android:padding="5dp"
-                                android:textColor="@android:color/darker_gray"/>
+                                />
 
                             <ImageView
                                 android:layout_width="20dp"
@@ -277,6 +395,7 @@
                     android:clickable="true"
                     android:layout_width="160dp"
                     android:layout_height="225dp"
+
                     android:layout_margin="10dp">
                     <LinearLayout
                         android:id="@+id/VolunteerL"
@@ -317,7 +436,7 @@
                                 android:gravity="center"
                                 android:text="Read More"
                                 android:padding="5dp"
-                                android:textColor="@android:color/darker_gray"/>
+                                />
                             <ImageView
                                 android:layout_width="20dp"
                                 android:layout_height="wrap_content"
@@ -332,6 +451,7 @@
                     android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
                     android:layout_width="160dp"
+
                     android:layout_height="225dp"
                     android:layout_margin="10dp">
 
@@ -378,7 +498,7 @@
                                 android:gravity="center"
                                 android:text="Read More"
                                 android:padding="5dp"
-                                android:textColor="@android:color/darker_gray"/>
+                                />
                             <ImageView
                                 android:layout_width="20dp"
                                 android:layout_height="match_parent"
@@ -424,13 +544,61 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:text="Our Own Program Towards Sustainable Development"
+                            android:text="Our Own Program Towards Sustainable Goals"
                             android:padding="5dp"
                             />
 
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Find Us On"
+                    android:gravity="center"
+                    android:textStyle="italic"
+                    android:textSize="25dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/fb"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/facebook"
+                         />
+                    <ImageView
+                        android:id="@+id/tw"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/twitter"/>
+                    <ImageView
+                        android:id="@+id/insta"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/insta"/>
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
+
+
     </android.support.v4.widget.NestedScrollView>
+
 </android.support.design.widget.CoordinatorLayout>
