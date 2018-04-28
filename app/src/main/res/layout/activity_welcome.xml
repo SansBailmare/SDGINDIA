@@ -7,15 +7,14 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context="com.example.sanket.sdg_india.WelcomeActivity"
-    android:background="@drawable/glass">
+    >
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:background="@drawable/water"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        >
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/colappsingtoolbar"
@@ -228,13 +227,6 @@
                         android:layout_height="120dp"
                         android:src="@drawable/jetli"/>
                 </LinearLayout>
-
-
-
-
-
-
-
             </ViewFlipper>
             <android.support.v7.widget.Toolbar
             android:id="@+id/toolbarid"
@@ -249,7 +241,6 @@
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/glass"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
         <LinearLayout
             android:layout_width="match_parent"
