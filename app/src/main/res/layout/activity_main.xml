@@ -1,108 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@drawable/cover2"
+    android:layout_centerInParent="true"
     tools:context="com.example.sanket.sdg_india.MainActivity">
-    <LinearLayout
+
+    <RelativeLayout
         android:id="@+id/l1"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SUSTAINABLE"
-        android:textColor="@color/susblue"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        android:layout_marginTop="70sp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        >
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="DEVELOPMENT"
-            android:textSize="45sp"
-            android:textColor="@color/susblue"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="G"
-            android:layout_marginRight="4dp"
-            android:textColor="@color/goblue"
-            android:textSize="80sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/iv"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:paddingTop="24dp"
-            android:paddingBottom="10dp"
-            android:layout_marginBottom="500dp"
-            android:src="@drawable/sdgwheel" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ALS"
-            android:textColor="@color/goblue"
-            android:textSize="80sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/l2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:id="@+id/res"
+            android:id="@+id/sustain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="horizontal"
-            android:layout_gravity="center_horizontal">
+            android:text="SUSTAINABLE"
+            android:textColor="#fff"
+            android:includeFontPadding="false"
+            android:lineSpacingMultiplier="1"
+            android:lineSpacingExtra="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="-5dp"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/dev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DEVELOPMENT"
+            android:layout_below="@+id/sustain"
+            android:textColor="#fff"
+            android:includeFontPadding="false"
+            android:lineSpacingMultiplier="1"
+            android:lineSpacingExtra="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="-10dp"
+            android:textSize="27dp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="80dp"
-                android:text="IN"
-                android:textColor="#ffa500"
-                android:textSize="85sp"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/ind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:lineSpacingMultiplier="1"
+            android:lineSpacingExtra="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="-10dp"
+            android:layout_marginLeft="15dp"
+            android:text="GOALS"
+            android:textColor="#fff"
+            android:layout_below="@+id/dev"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:lineSpacingMultiplier="1"
+            android:lineSpacingExtra="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginBottom="0dp"
+            android:text="INDIA"
+            android:textColor="#fff"
+            android:layout_below="@+id/ind"
+            android:textSize="50dp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="D"
-                android:textColor="@color/goblue"
-                android:textSize="85sp"
-                android:textStyle="bold" />
+    </RelativeLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="IA"
-                android:textColor="#228b22"
-                android:textSize="85sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-    </LinearLayout>
+    <com.ncorti.slidetoact.SlideToActView
+    android:id="@+id/slide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
-</LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="55dp"
+        android:elevation="10dp"
+        app:area_margin="8dp"
+        app:inner_color="#424242"
+        app:outer_color="#90FFFFFF"
+        app:text="Slide to make a change"
+        app:text_style="italic"/>
+
+
+
+</RelativeLayout>

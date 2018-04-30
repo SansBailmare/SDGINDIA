@@ -16,9 +16,11 @@
             android:layout_height="250dp"
             android:orientation="vertical">
             <ImageView
+                android:id="@+id/youthimage"
                 android:layout_marginTop="30dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="150dp"
+                android:transitionName="youthimage"
                 android:layout_height="150dp"
                 android:src="@drawable/youth"/>
         </LinearLayout>
@@ -30,9 +32,11 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="200dp">
             <TextView
+                android:id="@+id/youthtext"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:transitionName="youthtext"
                 android:text="How can I volunteer for the SDGs?"
                 android:textSize="25dp"/>
         </android.support.v7.widget.CardView>

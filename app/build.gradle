@@ -30,6 +30,7 @@ dependencies {
     implementation 'com.android.support:design:26.1.0'
     implementation 'com.r0adkll:slidableactivity:2.0.6'
     implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.github.cortinico:slidetoact:v0.3.0'
 
 
 }

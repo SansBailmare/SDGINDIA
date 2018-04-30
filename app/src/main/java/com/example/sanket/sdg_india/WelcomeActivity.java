@@ -6,6 +6,7 @@ import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -20,6 +21,7 @@ public class WelcomeActivity extends AppCompatActivity {
     private CardView sus,country,vol,youth,leader;
     private ImageView s,c,v,y,fb,tw,insta;
     private TextView su,co,vo,yo,sl1,sl2;
+    private CollapsingToolbarLayout collapsingToolbarLayout;
 
     Typeface tf1,tf2;
 
@@ -36,7 +38,9 @@ public class WelcomeActivity extends AppCompatActivity {
         tw=(ImageView)findViewById(R.id.tw);
         insta=(ImageView)findViewById(R.id.insta);
 
-
+        tf1=collapsingToolbarLayout.getCollapsedTitleTypeface();
+        tf2=Typeface.createFromAsset(getAssets(),"AmaticBold.ttf");
+        collapsingToolbarLayout.setCollapsedTitleTypeface(tf2);
 
         sl1=(TextView)findViewById(R.id.slt1);
         tf1=Typeface.createFromAsset(getAssets(),"AmaticBold.ttf");
