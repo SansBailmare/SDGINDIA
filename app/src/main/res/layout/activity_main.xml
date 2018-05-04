@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/cover2"
+    android:background="@drawable/coverr"
     android:layout_centerInParent="true"
     tools:context="com.example.sanket.sdg_india.MainActivity">
 
     <RelativeLayout
         android:id="@+id/l1"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="55dp"
+    android:layout_marginTop="45dp"
         >
 
         <TextView
             android:id="@+id/sustain"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SUSTAINABLE"
             android:textColor="#fff"
@@ -29,11 +29,11 @@
             android:paddingBottom="0dp"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="-5dp"
-            android:textSize="30dp"
+            android:textSize="35dp"
             android:textStyle="bold" />
         <TextView
             android:id="@+id/dev"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="DEVELOPMENT"
             android:layout_below="@+id/sustain"
@@ -45,60 +45,97 @@
             android:paddingBottom="0dp"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="-10dp"
-            android:textSize="27dp"
+            android:textSize="32dp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/ind"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:id="@+id/goals"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:includeFontPadding="false"
-            android:lineSpacingMultiplier="1"
-            android:lineSpacingExtra="0dp"
-            android:paddingTop="0dp"
-            android:paddingBottom="0dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="-10dp"
-            android:layout_marginLeft="15dp"
-            android:text="GOALS"
-            android:textColor="#fff"
             android:layout_below="@+id/dev"
-            android:textSize="50dp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="-10dp"
+            android:layout_marginTop="0dp"
+            android:lineSpacingExtra="0dp"
+            android:orientation="horizontal"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp">
+
+            <TextView
+                android:id="@+id/G"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dev"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"
+                android:lineSpacingMultiplier="1"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:text="G"
+                android:textColor="#fff"
+                android:textSize="55dp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/whitering"
+                android:layout_width="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/whitering"/>
+
+            <TextView
+                android:id="@+id/ind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dev"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="0dp"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"
+                android:lineSpacingMultiplier="1"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:text="ALS"
+                android:textColor="#fff"
+                android:textSize="55dp"
+                android:textStyle="bold" />
+        </LinearLayout>
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:includeFontPadding="false"
             android:lineSpacingMultiplier="1"
             android:lineSpacingExtra="0dp"
             android:layout_marginRight="0dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="-8dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginBottom="0dp"
             android:text="INDIA"
             android:textColor="#fff"
-            android:layout_below="@+id/ind"
-            android:textSize="50dp"
+            android:layout_below="@+id/goals"
+            android:textSize="55dp"
             android:textStyle="bold" />
 
     </RelativeLayout>
-
-    <com.ncorti.slidetoact.SlideToActView
-    android:id="@+id/slide"
+    <RelativeLayout
+        android:id="@+id/r1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:layout_marginBottom="55dp">
+    <com.ncorti.slidetoact.SlideToActView
+        android:id="@+id/slide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="55dp"
         android:elevation="10dp"
         app:area_margin="8dp"
         app:inner_color="#424242"
         app:outer_color="#90FFFFFF"
         app:text="Slide to make a change"
         app:text_style="italic"/>
-
+    </RelativeLayout>
 
 
 </RelativeLayout>

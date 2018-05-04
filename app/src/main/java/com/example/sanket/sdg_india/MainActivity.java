@@ -8,6 +8,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.ncorti.slidetoact.SlideToActView;
@@ -15,6 +16,7 @@ import com.ncorti.slidetoact.SlideToActView;
 public class MainActivity extends AppCompatActivity {
     LinearLayout l1,l2;
     Button btnsub;
+    RelativeLayout r1;
     Animation uptodown,downtoup;
     ImageView imageView;
     TextView t;
@@ -23,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         SlideToActView sta;
-        //t=(TextView)findViewById(R.id.O);
+        imageView=(ImageView)findViewById(R.id.whitering);
 
         sta=(SlideToActView)findViewById(R.id.slide);
         sta.setOnSlideCompleteListener(new SlideToActView.OnSlideCompleteListener() {
@@ -34,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Animation animation=AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotatering);
-        //t.setAnimation(animation);
+        imageView.setAnimation(animation);
         animation.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
@@ -44,8 +46,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onAnimationEnd(Animation animation) {
 
-                //startActivity(new Intent(getApplicationContext(),WelcomeActivity.class));
-
             }
 
             @Override
@@ -53,12 +53,10 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-       // l1 = (LinearLayout) findViewById(R.id.l1);
-       // l2 = (LinearLayout) findViewById(R.id.l2);
-        uptodown = AnimationUtils.loadAnimation(this,R.anim.uptodown);
-        downtoup = AnimationUtils.loadAnimation(this,R.anim.downtoup);
-        //l1.setAnimation(uptodown);
-        //l2.setAnimation(downtoup);
+        r1=(RelativeLayout) findViewById(R.id.r1);
+        uptodown = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.uptodown);
+        // downtoup = AnimationUtils.loadAnimation(this,R.anim.downtoup);
+        r1.setAnimation(uptodown);
 
     }
 }

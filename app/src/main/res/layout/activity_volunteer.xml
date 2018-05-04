@@ -1,59 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.sanket.sdg_india.VolunteerActivity"
-    android:background="@color/graylight"
-    android:orientation="vertical">
-    <RelativeLayout
+    android:background="@drawable/water"
+    android:orientation="vertical"
+    >
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <LinearLayout
-            android:background="@drawable/gradientbackground"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:orientation="vertical">
-            <ImageView
-                android:id="@+id/volunteerimage"
-                android:layout_marginTop="30dp"
-                android:layout_gravity="center_horizontal"
-                android:transitionName="volunteerimage"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@drawable/volunteer"/>
-        </LinearLayout>
-        <android.support.v7.widget.CardView
-            android:id="@+id/headingvol"
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginRight="60dp"
-            android:layout_marginTop="200dp">
-            <TextView
-                android:id="@+id/voltext"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:transitionName="voltext"
-                android:text="How can youth contribute to SDGs?"
-                android:textSize="25dp"/>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:layout_below="@id/headingvol"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="30dp">
-            <TextView
+            >
+            <LinearLayout
+                android:background="@drawable/cover"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:text="The idea for the SDGs was born at the 2012 Rio+20 Summit in Brazil. At the summit, government leaders began creating a set of universal goals to tackle poverty, ill health, inequality and environmental degradation. The idea was to use the SDGs as a new agreement to replace the eight Millennium Development Goals (MDGs), which expired in 2015."
-                android:textSize="25dp"/>
+                android:layout_height="250dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/volunteerimage"
+                    android:transitionName="volunteerimage"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/volunteer"/>
+            </LinearLayout>
+            <android.support.v7.widget.CardView
+                android:id="@+id/headingsus"
+                android:layout_width="match_parent"
+                android:layout_marginRight="60dp"
+                android:layout_height="100dp"
+                app:cardElevation="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="200dp">
+                <TextView
+                    android:id="@+id/voltext"
+                    android:transitionName="voltext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:text="How is my country progressing on the SDGs?"
+                    android:textSize="22dp"/>
+            </android.support.v7.widget.CardView>
 
-        </android.support.v7.widget.CardView>
-    </RelativeLayout>
+            <android.support.v7.widget.CardView
+                android:id="@+id/infocard"
+                android:layout_below="@id/headingsus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="8dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/turu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="5dp"
+                        android:layout_margin="15dp"
+                        android:textColor="#000"
+                        android:scrollbars="vertical"
+                        android:text="On 1 January 2016, the 2030 Agenda for Sustainable Development which was adopted by world leaders in September 2015 at a historical United Nations Summit officially came into force. Over the next fifteen years, with these new Goals that universally apply to all, countries will mobilize efforts to end all forms ofpoverty, fight inequalities and tackle climate change, while ensuring that no one is left behind.SDG’s succeeded the MDG’s (Millennium Development Goals) and aim to go further by expanding the challenges that must be embraced and recognize that ending poverty must go hand-in-hand withstrategies that build economic growth and addresses a range of social needs including education,health, social protection, and job opportunities, while tackling climate change and environmental protection."
+                        android:textSize="18dp"/>
+                    <ImageView
+                        android:id="@+id/imagegdp"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/turu"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/gdp" />
+                    <TextView
+                        android:id="@+id/muru"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:layout_below="@+id/imagegdp"
+                        android:textColor="#000"
+                        android:scrollbars="vertical"
+                        android:text="India ranks 116 out of 157 nations on a global index that assesses the performance of countries towards achieving the ambitious sustainable development goals (SDGs). The SDG Index and Dashboards Report produced by the Sustainable Development Solutions Network (SDSN) and the Bertelsmann Stiftung shows that world leaders need to strengthen their joint efforts to realise the 17 global goals."
+                        android:textSize="18dp"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
 
-
-</RelativeLayout>
+</LinearLayout>

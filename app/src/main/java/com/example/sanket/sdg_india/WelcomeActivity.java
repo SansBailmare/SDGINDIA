@@ -38,9 +38,6 @@ public class WelcomeActivity extends AppCompatActivity {
         tw=(ImageView)findViewById(R.id.tw);
         insta=(ImageView)findViewById(R.id.insta);
 
-        tf1=collapsingToolbarLayout.getCollapsedTitleTypeface();
-        tf2=Typeface.createFromAsset(getAssets(),"AmaticBold.ttf");
-        collapsingToolbarLayout.setCollapsedTitleTypeface(tf2);
 
         sl1=(TextView)findViewById(R.id.slt1);
         tf1=Typeface.createFromAsset(getAssets(),"AmaticBold.ttf");
